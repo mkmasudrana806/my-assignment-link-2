@@ -9,10 +9,13 @@ body {
 /*------------
  header section start
 ------------ */
-
+header {
+  display: flex;
+  justify-content: center;
+}
 .header {
-  width: 100%;
   height: 700px;
+  width: 1400px;
   background-color: #8a2be2;
   display: flex;
   justify-content: center;
@@ -36,11 +39,14 @@ body {
 }
 
 .watch-live {
-  background-color: #f86161;
+  background-color: #ff4949;
   padding: 5px;
   font-size: 20px;
   color: white;
   border: none;
+}
+button:hover {
+  background-color: #1f36ff;
 }
 
 .team img,
@@ -96,6 +102,54 @@ h3 {
 main section end
 -------------*/
 
+/*--------------------
+  section highlighted
+  ------------------- */
+
+.highlighted {
+  display: flex;
+  justify-content: center;
+}
+.box {
+  width: 1160px;
+  height: 300px;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 100px;
+}
+.copa-photo img,
+.copa-info {
+  width: 580px;
+  height: 300px;
+}
+/*---------------------
+    section highlighted end
+    -------------------- */
+
+/*-------------------
+     accounts section start
+     ------------------- */
+.user-accounts {
+  display: flex;
+  justify-content: center;
+}
+
+.accounts {
+  width: 400px;
+  height: 100px;
+  background-color: #ffcccc;
+  margin-top: 75px;
+  padding: 10px;
+}
+.accounts a {
+  text-decoration: none;
+}
+
+/*-------------------
+     accounts section start
+     ------------------- */
+
 /*-------------------
  footer section start
  ------------------ */
@@ -142,3 +196,23 @@ footer {
 /*-------------------
  footer section end
  ------------------ */
+
+/* -------------
+   media quries
+ --------------- */
+
+/* ----------------
+   media quries for mobile
+ ------------------ */
+/* @media only screen  and (max-width:688px) {
+
+  .header,main,footer{
+    width: 100%;
+  }
+   .team,.articles,.bos {
+grid-template-columns: repeat(1, 1fr);
+
+   }
+
+
+ } */
