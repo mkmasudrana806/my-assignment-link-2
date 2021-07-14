@@ -1,0 +1,93 @@
+/* font family for header */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+
+body {
+  text-transform: capitalize;
+}
+
+/*------------
+ header section start
+------------ */
+
+.header {
+  width: 1005;
+  height: 600px;
+  background-color: #8a2be2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.team {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  width: 1150px;
+  height: 400px;
+}
+.team-name {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+}
+
+.watch-live {
+  background-color: #f86161;
+  padding: 5px;
+  font-size: 20px;
+  color: white;
+  border: none;
+}
+
+.team img,
+.team-name {
+  width: 550px;
+  height: 400px;
+}
+/*------------
+ header section end
+------------ */
+
+/* font family for main section */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+
+/* ------------
+main section start
+-------------*/
+
+main {
+  display: flex;
+  justify-content: center;
+
+  text-align: justify;
+  margin-top: 76px;
+}
+
+.articles {
+  width: 1200px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 30px;
+}
+
+.article {
+  width: 350px;
+  height: 500px;
+  padding: 10px;
+  margin-left: 15px;
+  box-shadow: 1px 0px 20px 0.5px;
+}
+h3 {
+  font-family: "Poppins", sans-serif;
+}
+
+.photo img,
+.text {
+  width: 350px;
+  height: 300px;
+}
+/* ------------
+main section end
+-------------*/
