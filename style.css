@@ -204,15 +204,27 @@ footer {
 /* ----------------
    media quries for mobile
  ------------------ */
-/* @media only screen  and (max-width:688px) {
-
-  .header,main,footer{
+@media only screen and (max-width: 688px) {
+  .header,
+  main,
+  footer {
     width: 100%;
   }
-   .team,.articles,.bos {
-grid-template-columns: repeat(1, 1fr);
-
-   }
-
-
- } */
+  .team,
+  .articles,
+  .bos {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+  .header,
+  main,
+  footer {
+    max-width: 100%;
+  }
+  .team,
+  .articles,
+  .bos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
